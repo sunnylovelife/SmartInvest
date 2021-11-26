@@ -72,7 +72,8 @@ index_data = pd.read_csv('calendarStrategy/指数历史数据.csv').set_index('d
 index_data.index = [datestr2dtdate(e) for e in index_data.index]
 
 # 设置回测参数
-index_id = 'hs300' # 标的指数：'hs300' or 'csi500' or 'csi1000'
+#index_id = 'hs300' # 标的指数：'hs300' or 'csi500' or 'csi1000'
+index_id = 'csi1000' # 标的指数：'hs300' or 'csi500' or 'csi1000'
 start_date = datetime.date(2012,1,1) # 回测起始日期
 end_date = datetime.date(2021,7,27) # 回测截止日期
 t1 = 1  # 每月持仓交易起始日，从1起
